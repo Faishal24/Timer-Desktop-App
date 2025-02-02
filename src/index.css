@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #94a3b8;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0284c7;
+}
+
+h1, h2 {
+  font-size: 24px;
+}
+
+.timer-display p {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.timer-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.timer-selection-page .timer-options button {
+  width: 130px;
+  padding: 15px;
+}
+
+.timer-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin-bottom: 15px;
+}
+
+.selection-btn {
+  height: 150px;
+}
