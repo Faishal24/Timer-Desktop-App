@@ -1,12 +1,12 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0f172a;
+  font-family: "Archivo Black", sans-serif;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  color: #94a3b8;
+  color: black;
 }
 
 .app-container {
@@ -17,16 +17,21 @@ body {
 
 button {
   padding: 10px 20px;
+  font-family: "Share Tech", sans-serif;
+  font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  background-color: #0ea5e9;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  background-color: #ffdb33;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+  transition: box-shadow 0.1s ease-out, transform 0.1s ease-out, background-color 0.1s ease-out;
 }
 
 button:hover {
-  background-color: #0284c7;
+  background-color: #ffcc00;
+  box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.75);
+  transform: translate(1px, 1px)
 }
 
 h1, h2 {
@@ -60,4 +65,30 @@ h1, h2 {
 
 .selection-btn {
   height: 150px;
+}
+
+.home-page-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.home-page-exit-buttons {
+  padding: 10px 20px;
+  font-family: "Share Tech", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fca5a5;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+  transition: box-shadow 0.1s ease-out, transform 0.1s ease-out, background-color 0.1s ease-out;
+}
+
+.home-page-exit-buttons:hover {
+  background-color: #f76c6c;
+  box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.75);
+  transform: translate(1px, 1px)
 }

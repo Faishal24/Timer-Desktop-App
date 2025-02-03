@@ -5,10 +5,17 @@ type HomePageProps = {
 };
 
 const HomePage: React.FC<HomePageProps> = ({ onStart }) => {
+  const exit = () => {
+    window.close();
+  };
+
   return (
     <div className="home-page">
       <h1>Welcome to Timer App</h1>
-      <button onClick={() => onStart('timer-selection')}>Tap to Start</button>
+      <div className='home-page-buttons'>
+        <button onClick={() => onStart('timer-selection')}>Tap to Start</button>
+        <button onClick={exit} className='home-page-exit-buttons'>Exit</button>
+      </div>
     </div>
   );
 };
