@@ -15,10 +15,40 @@ const TimerSelectionPage: React.FC<TimerSelectionPageProps> = ({ onSelectTimer, 
     <div className="timer-selection-page">
       <h2>Select a Timer</h2>
       <div className="timer-options">
-        <button onClick={() => handleTimerSelection(60)} className='selection-btn'>1 Minute</button>
-        <button onClick={() => handleTimerSelection(120)} className='selection-btn'>2 Minutes</button>
-        <button onClick={() => handleTimerSelection(300)} className='selection-btn'>5 Minutes</button>
-        <button onClick={() => handleTimerSelection(600)} className='selection-btn'>10 Minutes</button>
+        <button onClick={() => handleTimerSelection(60)} className='selection-btn'>
+          <img 
+            src="/fire/fire 4.png" 
+            alt="timer" 
+            className="timer-img"
+          />
+          <p>1 Minute</p>
+        </button>
+        <button onClick={() => handleTimerSelection(90)} className='selection-btn'>
+          <img 
+            src="/fire/fire 3.png" 
+            alt="timer" 
+            className="timer-img"
+          />
+          <p>
+            1.5 Minutes
+          </p>
+        </button>
+        <button onClick={() => handleTimerSelection(120)} className='selection-btn'>
+          <img 
+            src="/fire/fire 2.png" 
+            alt="timer" 
+            className="timer-img"
+          />
+          <p>2 Minutes</p>
+        </button>
+        <button onClick={() => handleTimerSelection(180)} className='selection-btn'>
+          <img 
+            src="/fire/fire 1.png" 
+            alt="timer" 
+            className="timer-img"
+          />
+          <p>3 Minutes</p>
+        </button>
       </div>
       <button onClick={() => onBack('home')}>Back</button>
     </div>
