@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import HomePage from './components/HomePage';
 import TimerSelectionPage from './components/TimerSelectionPage';
 import TimerPage from './components/TimerPage';
