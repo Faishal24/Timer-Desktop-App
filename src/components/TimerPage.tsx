@@ -12,6 +12,10 @@ const TimerPage: React.FC<TimerPageProps> = ({ time, onBack }) => {
   useEffect(() => {
     let timerInterval: NodeJS.Timeout | undefined = undefined;
 
+    if (timeRemaining === 0) {
+      playSound();
+    }
+
     if (isRunning && timeRemaining > 0) {
       timerInterval = setInterval(() => {
         setTimeRemaining((prevTime) => prevTime - 1);
@@ -30,6 +34,11 @@ const TimerPage: React.FC<TimerPageProps> = ({ time, onBack }) => {
     const remainingSeconds = seconds % 60;
     return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
   };
+
+  const playSound = () => {
+    const audio = new Audio('/beep.mp3');
+    audio.play();
+  }
 
   return (
     <div className="timer-page">
