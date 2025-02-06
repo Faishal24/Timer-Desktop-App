@@ -17,7 +17,7 @@ const TimerSelectionPage: React.FC<TimerSelectionPageProps> = ({ onSelectTimer, 
       <div className="timer-options">
         <button onClick={() => handleTimerSelection(60)} className='selection-btn'>
           <img 
-            src="/fire/fire 4.png" 
+            src="/fire/fire-4.gif" 
             alt="timer" 
             className="timer-img"
           />
@@ -25,7 +25,7 @@ const TimerSelectionPage: React.FC<TimerSelectionPageProps> = ({ onSelectTimer, 
         </button>
         <button onClick={() => handleTimerSelection(90)} className='selection-btn'>
           <img 
-            src="/fire/fire 3.png" 
+            src="/fire/fire-3.gif" 
             alt="timer" 
             className="timer-img"
           />
@@ -35,7 +35,7 @@ const TimerSelectionPage: React.FC<TimerSelectionPageProps> = ({ onSelectTimer, 
         </button>
         <button onClick={() => handleTimerSelection(120)} className='selection-btn'>
           <img 
-            src="/fire/fire 2.png" 
+            src="/fire/fire-2.gif" 
             alt="timer" 
             className="timer-img"
           />
@@ -43,7 +43,7 @@ const TimerSelectionPage: React.FC<TimerSelectionPageProps> = ({ onSelectTimer, 
         </button>
         <button onClick={() => handleTimerSelection(180)} className='selection-btn'>
           <img 
-            src="/fire/fire 1.png" 
+            src="/fire/fire-1.gif" 
             alt="timer" 
             className="timer-img"
           />
